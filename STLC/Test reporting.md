@@ -380,27 +380,65 @@ Precondition: User is logged in and has an empty basket.
 
 
 
-### Scenario 00: Template
-
-As a user of MarketMate, I can not access alcoholic products if younger than 18 but I can still browse all the other categories.
+### Scenario 19: Verify order at 19.99€ incurs 5€ shipping
 
 Precondition: User is logged in and has an empty basket.
 
 | Step# | Action                               | Expected outcome                                           | OK/NOK | URL                                                | Link to issue               |
 |-------|--------------------------------------|------------------------------------------------------------|--------|----------------------------------------------------|-----------------------------|
 | 1     | Add items to basket until total = 19.99€| Basket total shows exactly 19.99€                       | OK     | [https://grocerymate.masterschool.com/store](https://grocerymate.masterschool.com/store)|                             |
-| 2     | Click on "Create a new account"      | Account creation form is displayed                         | OK     |                                                    |                             |
-| 3a    | Fill in RandomUsername               | UserName is accepted                                       | OK     |                                                    |                             |
-| 3b    | Fill in RandomEmailAdress            | RandomEmailAdress is accepted                              | OK     |                                                    |                             |
-| 3c    | Choose RandomPassword                | RandomPassword                                             | OK     |                                                    |                             |
-| 4     | Click on Sign Up                     | User is redirected to the login page                       | OK     |                                                    |                             |
-| 5     | Fill in Username and Password        | Username and Passord are accepted                          | OK     |                                                    |                             |
-| 6     | Click on Sign up                     | Login successfull                                          | OK     |                                                    |                |
-| 7     | Click on Shop                        | Age verification form is displayed                         | OK     |                                                    |                |
-| 8     | Leave DOB field empty                | Field remains empty                                        | OK     |                                                    |                |
-| 9     | Click on Confirm                     | Error message is displayed: "Date of Birth is required."   | OK     |                                                    |                |
-| 10    | Click on Confirm                     | Alcoholic products are visible                             | OK     |                                                    |                |
-| 11    | Browse non-alcoholic products section (e.g., "bread")   | Non-alcoholic products are visible      | OK     |                                                    |                |
+| 2     | Review shipping costs                | Shipping fee of 5€ is applied                              | OK     |                                                    |                             |
+
+<img width="950" height="734" alt="Screenshot 2025-09-01 at 18 58 29" src="https://github.com/user-attachments/assets/00faed0f-70b4-4f0a-829b-63b11c0c13bc" />
+
+
+### Scenario 20:  Verify orders below threshold always incur shipping fee
+
+Precondition: User is logged in and has an empty basket.
+
+| Step# | Action                               | Expected outcome                                           | OK/NOK | URL                                                | Link to issue               |
+|-------|--------------------------------------|------------------------------------------------------------|--------|----------------------------------------------------|-----------------------------|
+| 1     | Add items to basket until total = 10€| Basket total shows exactly 10€                             | OK     | [https://grocerymate.masterschool.com/store](https://grocerymate.masterschool.com/store)     |                             |
+| 2     | Review shipping costs                | Shipping fee of 5€ is applied                              | OK     |                                                    |                             |
+
+<img width="955" height="739" alt="Screenshot 2025-09-01 at 19 02 09" src="https://github.com/user-attachments/assets/2e0e266e-a942-4445-82b0-d5662aa4bf88" />
+
+
+### Scenario 21: Verify orders above threshold always free shipping
+
+Precondition: User is logged in and has an empty basket.
+
+| Step# | Action                               | Expected outcome                                           | OK/NOK | URL                                                | Link to issue               |
+|-------|--------------------------------------|------------------------------------------------------------|--------|----------------------------------------------------|-----------------------------|
+| 1     | Add items to basket until total = 50€| Basket total shows exactly 50€                             | OK     | [https://grocerymate.masterschool.com/store](https://grocerymate.masterschool.com/store)     |                             |
+| 2     | Review shipping costs                | Free shipping is applied                                   | OK     |                                                    |                             |
+
+<img width="938" height="707" alt="Screenshot 2025-09-01 at 19 05 14" src="https://github.com/user-attachments/assets/55b7d01b-0323-4ffb-9762-8ba29cea8aab" />
+
+
+### Scenario 22: Verify shipping fee updates dynamically when basket value crosses threshold
+
+Precondition: User is logged in and has an empty basket.
+
+| Step# | Action                               | Expected outcome                                           | OK/NOK | URL                                                | Link to issue               |
+|-------|--------------------------------------|------------------------------------------------------------|--------|----------------------------------------------------|-----------------------------|
+| 1     | Add items to basket until total = 15€| Basket total shows 15€, shipping fee = 5€                  | OK     | [https://grocerymate.masterschool.com/store](https://grocerymate.masterschool.com/store)     |                             |
+| 2     | Add more products worth 10€          | Basket total updates to 25€                                | OK     |                                                    |                             |
+| 3     | Review shipping costs in basket      | Shipping fee updates dynamically from 5€ → 0€              | OK     |                                                    |                             |
+
+<img width="1340" height="779" alt="Screenshot 2025-09-01 at 19 11 03" src="https://github.com/user-attachments/assets/ec3defe1-bb25-404c-a139-14718bf74cea" />
+<img width="1158" height="737" alt="Screenshot 2025-09-01 at 19 15 27" src="https://github.com/user-attachments/assets/6833326a-0854-45d7-b371-d890f911781a" />
+
+### Scenario 22: Verify system behavior when basket is empty
+
+Precondition: User is logged in.
+
+| Step# | Action                               | Expected outcome                                           | OK/NOK | URL                                                | Link to issue               |
+|-------|--------------------------------------|------------------------------------------------------------|--------|----------------------------------------------------|-----------------------------|
+| 1     | Ensure basket is empty (total = 0€)  | Basket shows 0€, no items listed                           | OK     | [https://grocerymate.masterschool.com/store](https://grocerymate.masterschool.com/store)     |                             |
+| 2     | Attempt to proceed to checkout       | Checkout is blocked, user sees message: "Your basket is empty." | OK     |                                                    |                             |
+
+<img width="1230" height="660" alt="Screenshot 2025-09-01 at 19 19 44" src="https://github.com/user-attachments/assets/2d18bfb0-3b86-4f58-a230-7f8cc25b9c63" />
 
 
 ### Scenario 00: Template
@@ -422,6 +460,8 @@ As a user of MarketMate, I can not access alcoholic products if younger than 18 
 | 9     | Click on Confirm                     | Error message is displayed: "Date of Birth is required."   | OK     |                                                    |                |
 | 10    | Click on Confirm                     | Alcoholic products are visible                             | OK     |                                                    |                |
 | 11    | Browse non-alcoholic products section (e.g., "bread")   | Non-alcoholic products are visible      | OK     |                                                    |                |
+
+
 
 
 
