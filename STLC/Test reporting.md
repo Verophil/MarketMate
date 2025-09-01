@@ -342,9 +342,9 @@ As a user of MarketMate, I have to fill in the age verification using the valid 
 
 
 
-### Scenario 00: Template
+### Scenario 17: Verify system behavior when user enters an unrealistic age (150 years old)
 
-As a user of MarketMate, I can not access alcoholic products if younger than 18 but I can still browse all the other categories.
+As a user of MarketMate, I have to aneter a realistic age.
 
 | Step# | Action                               | Expected outcome                                           | OK/NOK | URL                                                | Link to issue               |
 |-------|--------------------------------------|------------------------------------------------------------|--------|----------------------------------------------------|-----------------------------|
@@ -355,13 +355,28 @@ As a user of MarketMate, I can not access alcoholic products if younger than 18 
 | 3c    | Choose RandomPassword                | RandomPassword                                             | OK     |                                                    |                             |
 | 4     | Click on Sign Up                     | User is redirected to the login page                       | OK     |                                                    |                             |
 | 5     | Fill in Username and Password        | Username and Passord are accepted                          | OK     |                                                    |                             |
-| 6     | Click on Sign up                     | Login successfull                                          | OK     |                                                    |                |
-| 7     | Click on Shop                        | Age verification form is displayed                         | OK     |                                                    |                |
-| 8     |Enter DOB = 01-01-1875 (150 years old)| Field input is displayed                                   | OK     |                                                    |                |
-| 9     | Click on Confirm                     | Error message is displayed: "Please enter a valid date of birth."   | NOK    |                                                    |                |
+| 6     | Click on Sign up                     | Login successfull                                          | OK     |                                                    |                             |
+| 7     | Click on Shop                        | Age verification form is displayed                         | OK     |                                                    |                             |
+| 8     |Enter DOB = 01-01-1875 (150 years old)| Field input is displayed                                   | OK     |                                                    |                             |
+| 9     | Click on Confirm                     | Error message is displayed: "Please enter a valid date of birth."   | NOK    |                                           | [https://github.com/Verophil/MarketMate/issues/6](https://github.com/Verophil/MarketMate/issues/6)               |
 
 <img width="1470" height="956" alt="Screenshot 2025-09-01 at 18 15 48" src="https://github.com/user-attachments/assets/756c0dc4-cff4-47c1-8769-ebb318de8bd9" />
 <img width="2940" height="1912" alt="Screenshot 2025-09-01 at 18 15 57" src="https://github.com/user-attachments/assets/9910bc95-0892-4b79-818f-d0735a91b975" />
+
+
+
+### Scenario 18: Verify order exactly at 20€ qualifies for free shipping
+
+As a user of MarketMate, I get free shipping when purchasing goods of the value 20+ Euro.
+
+Precondition: User is logged in and has an empty basket.
+
+| Step# | Action                               | Expected outcome                                           | OK/NOK | URL                                                | Link to issue               |
+|-------|--------------------------------------|------------------------------------------------------------|--------|----------------------------------------------------|-----------------------------|
+| 1     | Add items to basket until total = 20€| Basket total shows exactly 20€                             | OK     | [https://grocerymate.masterschool.com/store](https://grocerymate.masterschool.com/store)|                             |
+| 2     | Review shipping costs                | Free shipping is applied                                   | NOK    |                                                    |                             |
+
+<img width="1268" height="772" alt="Screenshot 2025-09-01 at 18 39 10" src="https://github.com/user-attachments/assets/673c1d6c-6432-48d6-8301-23e94fe230f8" />
 
 
 
@@ -384,7 +399,6 @@ As a user of MarketMate, I can not access alcoholic products if younger than 18 
 | 9     | Click on Confirm                     | Error message is displayed: "Date of Birth is required."   | OK     |                                                    |                |
 | 10    | Click on Confirm                     | Alcoholic products are visible                             | OK     |                                                    |                |
 | 11    | Browse non-alcoholic products section (e.g., "bread")   | Non-alcoholic products are visible      | OK     |                                                    |                |
-
 
 
 
