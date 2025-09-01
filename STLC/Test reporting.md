@@ -310,11 +310,35 @@ As a user of MarketMate, I have to fill in the age verification form.
 | 3c    | Choose RandomPassword                | RandomPassword                                             | OK     |                                                    |                             |
 | 4     | Click on Sign Up                     | User is redirected to the login page                       | OK     |                                                    |                             |
 | 5     | Fill in Username and Password        | Username and Passord are accepted                          | OK     |                                                    |                             |
-| 6     | Click on Sign up                     | Login successfull                                          | OK     |                                                    |                |
-| 7     | Click on Shop                        | Age verification form is displayed                         | OK     |                                                    |                |
-| 8     | Leave DOB field empty                | Field remains empty                                        | OK     |                                                    |                |
-| 9     | Click on Confirm                     | Error message is displayed: "Date of Birth is required."   | NOK    |                                                    |                |
+| 6     | Click on Sign up                     | Login successfull                                          | OK     |                                                    |                             |
+| 7     | Click on Shop                        | Age verification form is displayed                         | OK     |                                                    |                             |
+| 8     | Leave DOB field empty                | Field remains empty                                        | OK     |                                                    |                             |
+| 9     | Click on Confirm                     | Error message is displayed: "Date of Birth is required."   | NOK    |                                                    |[https://github.com/Verophil/MarketMate/issues/4](https://github.com/Verophil/MarketMate/issues/4) |
 
+<img width="2940" height="1912" alt="Screenshot 2025-09-01 at 16 46 28" src="https://github.com/user-attachments/assets/54ff196c-e542-47cd-bbbe-7f8c623eaab8" />
+
+
+
+### Scenario 16: Verify invalid DOB format
+
+As a user of MarketMate, I have to fill in the age verification using the valid format.
+
+| Step# | Action                               | Expected outcome                                           | OK/NOK | URL                                                | Link to issue               |
+|-------|--------------------------------------|------------------------------------------------------------|--------|----------------------------------------------------|-----------------------------|
+| 1     | Go too sign-up page                  | Sign-up page is displayed                                  | OK     | [https://grocerymate.masterschool.com/auth](https://grocerymate.masterschool.com/auth)     |                             |
+| 2     | Click on "Create a new account"      | Account creation form is displayed                         | OK     |                                                    |                             |
+| 3a    | Fill in RandomUsername               | UserName is accepted                                       | OK     |                                                    |                             |
+| 3b    | Fill in RandomEmailAdress            | RandomEmailAdress is accepted                              | OK     |                                                    |                             |
+| 3c    | Choose RandomPassword                | RandomPassword                                             | OK     |                                                    |                             |
+| 4     | Click on Sign Up                     | User is redirected to the login page                       | OK     |                                                    |                             |
+| 5     | Fill in Username and Password        | Username and Passord are accepted                          | OK     |                                                    |                             |
+| 6     | Click on Sign up                     | Login successfull                                          | OK     |                                                    |                             |
+| 7     | Click on Shop                        | Age verification form is displayed                         | OK     |                                                    |                             |
+| 8     | Enter DOB = "13/25/2008"             | Field input is displayed                                   | OK     |                                                    |                             |
+| 9     | Click on Confirm                     | Error message is displayed: "Invalid Date of Birth format. Please use MM-DD-YYYY."   | NOK    |                          |                             |
+
+
+<img width="2940" height="1912" alt="Screenshot 2025-09-01 at 17 59 38" src="https://github.com/user-attachments/assets/4314ccb3-bd11-4881-b33e-eab18b5d7c78" />
 
 
 
@@ -339,7 +363,6 @@ As a user of MarketMate, I can not access alcoholic products if younger than 18 
 | 11    | Browse non-alcoholic products section (e.g., "bread")   | Non-alcoholic products are visible      | OK     |                                                    |                |
 
 
-
 ### Scenario 00: Template
 
 As a user of MarketMate, I can not access alcoholic products if younger than 18 but I can still browse all the other categories.
@@ -359,5 +382,8 @@ As a user of MarketMate, I can not access alcoholic products if younger than 18 
 | 9     | Click on Confirm                     | Error message is displayed: "Date of Birth is required."   | OK     |                                                    |                |
 | 10    | Click on Confirm                     | Alcoholic products are visible                             | OK     |                                                    |                |
 | 11    | Browse non-alcoholic products section (e.g., "bread")   | Non-alcoholic products are visible      | OK     |                                                    |                |
+
+
+
 
 
