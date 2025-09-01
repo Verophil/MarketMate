@@ -32,7 +32,7 @@
 6. **Equivalence Partitioning**
   - **Test Case**: Verify rating with and without feedback.
     - **Input**:
-      - Case 1: Rating = 5 stars, Feedback = empty.
+      - Case 1: Rating = 4 stars, Feedback = empty.
       - Case 2: Rating = 4 stars, Feedback = "Great product".
     - **Expected Outcome**: Both cases accepted.
 
