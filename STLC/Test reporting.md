@@ -113,12 +113,12 @@ As a user of MarketMate, I am  able to submit a rating with feedback.
 
 | Step# | Action                               | Expected outcome                                           | OK/NOK | URL                                                | Link to issue               |
 |-------|--------------------------------------|------------------------------------------------------------|--------|----------------------------------------------------|-----------------------------|
-| 1     | Go to product detail page of "Sample Product" | Product detail page is displayed                  | OK     | [https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb47a5b](https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb47a5b)     |                             |
+| 1     | Go to product detail page of "Sample Product" | Product detail page is displayed                  | OK     | [https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb47a5b](https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb47a5b) |                             |
 | 2     | Scroll down to rating section        | Rating widget is visible                                   | OK     |                                          |                             |
 | 3a    | Select 4 stars rating                | 4 stars are highlighted                                    | OK     |                                                    |                             |
 | 3b    | Enter feedback: "Great product"      | Text is accepted                                           | OK     |                                                    |                             |
-| 4     | Click on "Send"                      | Rating + feedback are saved successfully                   | OK       |                                                    |                             |
-| 5     | Verify rating display                | The 4-star rating with feedback "Great product" is displayed immediately | NOK  |                                                    |                             |
+| 4     | Click on "Send"                      | Rating + feedback are saved successfully                   | OK     |                                                    |                             |
+| 5     | Verify rating display                | The 4-star rating with feedback "Great product" is displayed immediately | NOK  |                                        |  [https://github.com/Verophil/MarketMate/issues/3](https://github.com/Verophil/MarketMate/issues/3) |
 
 <img width="1177" height="672" alt="Screenshot 2025-09-01 at 12 03 19" src="https://github.com/user-attachments/assets/b59c5358-d089-4669-b260-5639ebd6a7a3" />
 <img width="1252" height="761" alt="Screenshot 2025-09-01 at 12 04 15" src="https://github.com/user-attachments/assets/17e914c0-68b2-4f7b-9abf-9c5ac1c62c3e" />
