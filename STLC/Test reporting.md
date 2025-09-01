@@ -47,7 +47,7 @@ As a user of MarketMate, I am able to submit a feedback of exactly 500 character
 | 1     | Go to product detail page of "Sample Product" | Product detail page is displayed | OK     | [https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb4798f](https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb4798f)     |                             |
 | 2     |Scroll down to rating section  | Rating widget is visible  | OK     |       |                             |
 | 3a    | Select 3 stars rating | 3 stars are highlighted | OK     |                     |                             |
-| 3b    | Enter feedback text with exactly 500 characters  | Text is accepted, no error message displayed| NOK| |[https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb479b6](https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb479b6)   |
+| 3b    | Enter feedback text with exactly 500 characters  | Text is accepted, no error message displayed| NOK| |[https://github.com/Verophil/MarketMate/issues/1](https://github.com/Verophil/MarketMate/issues/1)   |
 | 4     | Click on "Send" | Rating + feedback are saved successfully | OK |     |       |
 | 5     | Verify rating display | The 3-star rating and the 500-character feedback are displayed immediately under the product ratings | NOK  |   |   |
 
