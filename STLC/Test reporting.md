@@ -102,3 +102,19 @@ As a user of FindMate, I am not able to sign up when I register with an invalid 
 | 3e    | Password is 'RandomPassword1'        |                                                            |        |                                                    |                             |
 | 4     | Click sign up                        | You cannot be 200 years old, so I expect an error message  | NOK    |                                                    | [https://github.com/software-engineering-ms/example-portfolio/issues/2](https://github.com/software-engineering-ms/example-portfolio/issues/2) |
 
+
+### Scenario 6: Template
+
+As a user of FindMate, I am not able to sign up when I register with an invalid Date of Birth.
+
+| Step# | Action                               | Expected outcome                                           | OK/NOK | URL                                                | Link to issue               |
+|-------|--------------------------------------|------------------------------------------------------------|--------|----------------------------------------------------|-----------------------------|
+| 1     | Go to login page FindMate            | Login page appears                                         | OK     | [https://findmate.masterschool.com/](https://findmate.masterschool.com/)     |                             |
+| 2     | Click on Sign up                     | You are directed to the sign up page                       | OK     | /auth                                              |                             |
+| 3a    | Fill in 'InputValidationTest' as username |                                                            |        |                                                    |                             |
+| 3b    | Fill 19-08-1820 as Date of Birth     |                                                            |        |                                                    |                             |
+| 3c    | Write 'This is my Bio'               |                                                            |        |                                                    |                             |
+| 3d    | Write karin@faculty.masterschool.com as e-mail address |                                                            |        |                                                    |                             |
+| 3e    | Password is 'RandomPassword1'        |                                                            |        |                                                    |                             |
+| 4     | Click sign up                        | You cannot be 200 years old, so I expect an error message  | NOK    |                                                    | [https://github.com/software-engineering-ms/example-portfolio/issues/2](https://github.com/software-engineering-ms/example-portfolio/issues/2) |
+
