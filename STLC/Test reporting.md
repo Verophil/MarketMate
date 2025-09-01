@@ -87,25 +87,48 @@ As a user of MarketMate, I am not able to rate a product before having purchased
 <img width="1014" height="735" alt="Screenshot 2025-08-31 at 20 50 26" src="https://github.com/user-attachments/assets/a08553cb-93a3-4e40-bd8c-40bc8fc9d8ed" />
 
 
-### Scenario 2: Template
+### Scenario 6: Verify rating without feedback
 
-As a user of FindMate, I am not able to sign up when I register with an invalid Date of Birth.
+Precondition: User is logged in and has purchased the product "Sample Product".
+
+As a user of MarketMate, I am able to submit a rating without writing a feedback.
 
 | Step# | Action                               | Expected outcome                                           | OK/NOK | URL                                                | Link to issue               |
 |-------|--------------------------------------|------------------------------------------------------------|--------|----------------------------------------------------|-----------------------------|
-| 1     | Go to login page FindMate            | Login page appears                                         | OK     | [https://findmate.masterschool.com/](https://findmate.masterschool.com/)     |                             |
-| 2     | Click on Sign up                     | You are directed to the sign up page                       | OK     | /auth                                              |                             |
-| 3a    | Fill in 'InputValidationTest' as username |                                                            |        |                                                    |                             |
-| 3b    | Fill 19-08-1820 as Date of Birth     |                                                            |        |                                                    |                             |
-| 3c    | Write 'This is my Bio'               |                                                            |        |                                                    |                             |
-| 3d    | Write karin@faculty.masterschool.com as e-mail address |                                                            |        |                                                    |                             |
-| 3e    | Password is 'RandomPassword1'        |                                                            |        |                                                    |                             |
-| 4     | Click sign up                        | You cannot be 200 years old, so I expect an error message  | NOK    |                                                    | [https://github.com/software-engineering-ms/example-portfolio/issues/2](https://github.com/software-engineering-ms/example-portfolio/issues/2) |
+| 1     | Go to product detail page of "Sample Product" | Product detail page is displayed                  | OK     | [https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb479ec](https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb479ec) |                             |
+| 2     | Scroll down to rating section        | Rating widget is visible                                   | OK     |                                          |                             |
+| 3a    | Select 4 stars rating                | 4 stars are highlighted                                    | OK     |                                                    |                             |
+| 3b    | Leave feeback field empty            | No error message shown                                     | OK     |                                                    |                             |
+| 4     | Click on "Send"                      | Rating is saved successfully                               | OK     |                                                    |                             |
+| 5     | Verify rating display                | The 4-star rating is displayed immediately under the product ratings |OK     |                                                    |                             |
+
+<img width="1277" height="763" alt="Screenshot 2025-09-01 at 11 52 30" src="https://github.com/user-attachments/assets/32cfded2-ebbb-400e-94a4-e517db084753" />
 
 
-### Scenario 6: Template
+### Scenario 7: Verify rating with feedback
 
-As a user of FindMate, I am not able to sign up when I register with an invalid Date of Birth.
+Precondition: User is logged in and has purchased the product "Sample Product".
+
+As a user of MarketMate, I am  able to submit a rating with feedback.
+
+| Step# | Action                               | Expected outcome                                           | OK/NOK | URL                                                | Link to issue               |
+|-------|--------------------------------------|------------------------------------------------------------|--------|----------------------------------------------------|-----------------------------|
+| 1     | Go to product detail page of "Sample Product" | Product detail page is displayed                  | OK     | [https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb47a5b](https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb47a5b)     |                             |
+| 2     | Scroll down to rating section        | Rating widget is visible                                   | OK     |                                          |                             |
+| 3a    | Select 4 stars rating                | 4 stars are highlighted                                    | OK     |                                                    |                             |
+| 3b    | Enter feedback: "Great product"      | Text is accepted                                           | OK     |                                                    |                             |
+| 4     | Click on "Send"                      | Rating + feedback are saved successfully                   | OK       |                                                    |                             |
+| 5     | Verify rating display                | The 4-star rating with feedback "Great product" is displayed immediately | NOK  |                                                    |                             |
+
+<img width="1177" height="672" alt="Screenshot 2025-09-01 at 12 03 19" src="https://github.com/user-attachments/assets/b59c5358-d089-4669-b260-5639ebd6a7a3" />
+<img width="1252" height="761" alt="Screenshot 2025-09-01 at 12 04 15" src="https://github.com/user-attachments/assets/17e914c0-68b2-4f7b-9abf-9c5ac1c62c3e" />
+
+
+### Scenario 0: Template
+
+Precondition: User is logged in and has purchased the product "Sample Product".
+
+As a user of MarketMate, I am  able to sign up when I register with an invalid Date of Birth.
 
 | Step# | Action                               | Expected outcome                                           | OK/NOK | URL                                                | Link to issue               |
 |-------|--------------------------------------|------------------------------------------------------------|--------|----------------------------------------------------|-----------------------------|
