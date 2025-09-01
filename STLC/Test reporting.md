@@ -4,14 +4,14 @@ Precondition: User is logged in and has purchased the product "Sample Product".
 
 As a user of MarketMate, I am able to submit a a minimum rating (1 star).
 
-| Step# | Action                        | Expected outcome  | OK/NOK | URL                      | Link to issue |
+| Step# | Action                         | Expected outcome  | OK/NOK | URL                      | Link to issue |
 |-------|--------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
-| 1     | Go to product detail page of sample product                                        | Product detail page is displayed | OK     |[https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb47991](https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb47991) |               |
-| 2     | Scroll down to rating section       | Rating widget is visible  | OK     |                  |               |
-| 3a    | Select 1 star rating  | 1 star is highlighted | OK      |                          |               |
-| 3b    | Leave feedback field empty |                  |        |                          |               |
-| 4     | Click on "Send"        | Rating is saved successfully   | OK        |                          |               |
-| 5     | Verify rating display | The 1-star rating appears immediately under the product ratings | OK        |           |  |
+| 1     | Go to product detail page of sample product | Product detail page is displayed | OK     | [https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb47991](https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb47991) |               |
+| 2     | Scroll down to rating section  | Rating widget is visible | OK     |                  |               |
+| 3a    | Select 1 star rating           | 1 star is highlighted | OK      |                          |               |
+| 3b    | Leave feedback field empty     |                   |        |                          |               |
+| 4     | Click on "Send"                | Rating is saved successfully   | OK        |                          |               |
+| 5     | Verify rating display          | The 1-star rating appears immediately under the product ratings | OK        |           |  |
 
 <img width="1340" height="766" alt="Screenshot 2025-08-31 at 18 49 15" src="https://github.com/user-attachments/assets/9934bf83-42cb-4f07-8481-07e033df91c4" />
 <img width="1255" height="514" alt="Screenshot 2025-08-31 at 18 50 32" src="https://github.com/user-attachments/assets/c4a308da-5350-41fa-bf90-fbdb1fd7a486" />
@@ -25,8 +25,8 @@ As a user of MarketMate, I am not able to submit a maximum rating (5 stars)
 
 | Step# | Action                               | Expected outcome                                           | OK/NOK | URL                                                | Link to issue               |
 |-------|--------------------------------------|------------------------------------------------------------|--------|----------------------------------------------------|-----------------------------|
-| 1     | Go to product detail page of "Sample Product"           | Product detail page is displayed | OK     | [https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb47990](https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb47990)     |   |
-| 2     | Scroll down to rating section  | Rating widget is visible  | OK     |           |                             |
+| 1     | Go to product detail page of "Sample Product"           | Product detail page is displayed        | OK     | [https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb47990](https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb47990)     |   |
+| 2     | Scroll down to rating section  | Rating widget is visible                                         | OK     |           |                             |
 | 3a    | Select 5 stars rating | 5 stars are highlighted | OK        |              |                             |
 | 3b    | Leave feedback field empty    |                                |        |        |                             |
 | 4     | Click on "Send"              |  Rating is saved successfully   | OK     |    |                      |
@@ -325,7 +325,7 @@ As a user of MarketMate, I have to fill in the age verification using the valid 
 
 | Step# | Action                               | Expected outcome                                           | OK/NOK | URL                                                | Link to issue               |
 |-------|--------------------------------------|------------------------------------------------------------|--------|----------------------------------------------------|-----------------------------|
-| 1     | Go too sign-up page                  | Sign-up page is displayed                                  | OK     | [https://grocerymate.masterschool.com/auth](https://grocerymate.masterschool.com/auth)     |                             |
+| 1     | Go too sign-up page                  | Sign-up page is displayed                                  | OK     | [https://grocerymate.masterschool.com/auth](https://grocerymate.masterschool.com/auth)|                             |
 | 2     | Click on "Create a new account"      | Account creation form is displayed                         | OK     |                                                    |                             |
 | 3a    | Fill in RandomUsername               | UserName is accepted                                       | OK     |                                                    |                             |
 | 3b    | Fill in RandomEmailAdress            | RandomEmailAdress is accepted                              | OK     |                                                    |                             |
@@ -335,7 +335,7 @@ As a user of MarketMate, I have to fill in the age verification using the valid 
 | 6     | Click on Sign up                     | Login successfull                                          | OK     |                                                    |                             |
 | 7     | Click on Shop                        | Age verification form is displayed                         | OK     |                                                    |                             |
 | 8     | Enter DOB = "13/25/2008"             | Field input is displayed                                   | OK     |                                                    |                             |
-| 9     | Click on Confirm                     | Error message is displayed: "Invalid Date of Birth format. Please use MM-DD-YYYY."   | NOK    |                          |                             |
+| 9     | Click on Confirm                     | Error message is displayed: "Invalid Date of Birth format. Please use MM-DD-YYYY."   | NOK    |                          | [https://github.com/Verophil/MarketMate/issues/5](https://github.com/Verophil/MarketMate/issues/5)|
 
 
 <img width="2940" height="1912" alt="Screenshot 2025-09-01 at 17 59 38" src="https://github.com/user-attachments/assets/4314ccb3-bd11-4881-b33e-eab18b5d7c78" />
@@ -357,10 +357,12 @@ As a user of MarketMate, I can not access alcoholic products if younger than 18 
 | 5     | Fill in Username and Password        | Username and Passord are accepted                          | OK     |                                                    |                             |
 | 6     | Click on Sign up                     | Login successfull                                          | OK     |                                                    |                |
 | 7     | Click on Shop                        | Age verification form is displayed                         | OK     |                                                    |                |
-| 8     | Leave DOB field empty                | Field remains empty                                        | OK     |                                                    |                |
-| 9     | Click on Confirm                     | Error message is displayed: "Date of Birth is required."   | OK     |                                                    |                |
-| 10    | Click on Confirm                     | Alcoholic products are visible                             | OK     |                                                    |                |
-| 11    | Browse non-alcoholic products section (e.g., "bread")   | Non-alcoholic products are visible      | OK     |                                                    |                |
+| 8     |Enter DOB = 01-01-1875 (150 years old)| Field input is displayed                                   | OK     |                                                    |                |
+| 9     | Click on Confirm                     | Error message is displayed: "Please enter a valid date of birth."   | NOK    |                                                    |                |
+
+<img width="1470" height="956" alt="Screenshot 2025-09-01 at 18 15 48" src="https://github.com/user-attachments/assets/756c0dc4-cff4-47c1-8769-ebb318de8bd9" />
+<img width="2940" height="1912" alt="Screenshot 2025-09-01 at 18 15 57" src="https://github.com/user-attachments/assets/9910bc95-0892-4b79-818f-d0735a91b975" />
+
 
 
 ### Scenario 00: Template
