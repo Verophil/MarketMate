@@ -373,11 +373,34 @@ Precondition: User is logged in and has an empty basket.
 
 | Step# | Action                               | Expected outcome                                           | OK/NOK | URL                                                | Link to issue               |
 |-------|--------------------------------------|------------------------------------------------------------|--------|----------------------------------------------------|-----------------------------|
-| 1     | Add items to basket until total = 20€| Basket total shows exactly 20€                             | OK     | [https://grocerymate.masterschool.com/store](https://grocerymate.masterschool.com/store)|                             |
-| 2     | Review shipping costs                | Free shipping is applied                                   | NOK    |                                                    |                             |
+| 1     | Add items to basket until total = 20€| Basket total shows exactly 20€                             | OK     | [https://grocerymate.masterschool.com/store](https://grocerymate.masterschool.com/store)|             |
+| 2     | Review shipping costs                | Free shipping is applied                                   | OK     |                                                    |[https://github.com/Verophil/MarketMate/issues/7](https://github.com/Verophil/MarketMate/issues/7)|
 
-<img width="1268" height="772" alt="Screenshot 2025-09-01 at 18 39 10" src="https://github.com/user-attachments/assets/673c1d6c-6432-48d6-8301-23e94fe230f8" />
+<img width="1274" height="698" alt="Screenshot 2025-09-01 at 18 50 56" src="https://github.com/user-attachments/assets/3b7915e2-8ece-4571-919c-864c5aef1f66" />
 
+
+
+### Scenario 00: Template
+
+As a user of MarketMate, I can not access alcoholic products if younger than 18 but I can still browse all the other categories.
+
+Precondition: User is logged in and has an empty basket.
+
+| Step# | Action                               | Expected outcome                                           | OK/NOK | URL                                                | Link to issue               |
+|-------|--------------------------------------|------------------------------------------------------------|--------|----------------------------------------------------|-----------------------------|
+| 1     | Add items to basket until total = 19.99€| Basket total shows exactly 19.99€                       | OK     | [https://grocerymate.masterschool.com/store](https://grocerymate.masterschool.com/store)|                             |
+| 2     | Click on "Create a new account"      | Account creation form is displayed                         | OK     |                                                    |                             |
+| 3a    | Fill in RandomUsername               | UserName is accepted                                       | OK     |                                                    |                             |
+| 3b    | Fill in RandomEmailAdress            | RandomEmailAdress is accepted                              | OK     |                                                    |                             |
+| 3c    | Choose RandomPassword                | RandomPassword                                             | OK     |                                                    |                             |
+| 4     | Click on Sign Up                     | User is redirected to the login page                       | OK     |                                                    |                             |
+| 5     | Fill in Username and Password        | Username and Passord are accepted                          | OK     |                                                    |                             |
+| 6     | Click on Sign up                     | Login successfull                                          | OK     |                                                    |                |
+| 7     | Click on Shop                        | Age verification form is displayed                         | OK     |                                                    |                |
+| 8     | Leave DOB field empty                | Field remains empty                                        | OK     |                                                    |                |
+| 9     | Click on Confirm                     | Error message is displayed: "Date of Birth is required."   | OK     |                                                    |                |
+| 10    | Click on Confirm                     | Alcoholic products are visible                             | OK     |                                                    |                |
+| 11    | Browse non-alcoholic products section (e.g., "bread")   | Non-alcoholic products are visible      | OK     |                                                    |                |
 
 
 ### Scenario 00: Template
@@ -399,6 +422,7 @@ As a user of MarketMate, I can not access alcoholic products if younger than 18 
 | 9     | Click on Confirm                     | Error message is displayed: "Date of Birth is required."   | OK     |                                                    |                |
 | 10    | Click on Confirm                     | Alcoholic products are visible                             | OK     |                                                    |                |
 | 11    | Browse non-alcoholic products section (e.g., "bread")   | Non-alcoholic products are visible      | OK     |                                                    |                |
+
 
 
 
