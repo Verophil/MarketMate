@@ -219,14 +219,17 @@ As a user of MarketMate, I As a user of MarketMate, I am able to sign up and acc
 | 6     | Click on Sign up                     | Login successfull                                          | OK     |                                                    |                |
 | 7     | Click on Shop                        | Age verification form is displayed                         | OK     |                                                    |                |
 | 8     | Enter date of birth = today minus 18 years (format: MM-DD-YYYY) | DOB is accepted                 | OK     |                                                    |                |
-| 9     | Click on Confirm                     | User is granted access to shop including alcohol           | NOK     |                                                    |                |
+| 9     | Click on Confirm                     | User is granted access to shop including alcohol           | OK     |                                                    |                |
+| 10    | Verify product visibility            | Alcoholic products are visible and accessible              | OK     |                                                    |                |
+
+<img width="1304" height="768" alt="Screenshot 2025-09-01 at 15 36 51" src="https://github.com/user-attachments/assets/80d6e88a-fe06-4fe6-afb7-213677365bc1" />
+
+<img width="1470" height="956" alt="Screenshot 2025-09-01 at 16 10 44" src="https://github.com/user-attachments/assets/78638197-2ad9-476d-b7bc-ec7aad650ffa" />
 
 
+### Scenario 13: Verify restriction for user 1 day below 18
 
-
-### Scenario 00: Templaate
-
-As a user of MarketMate, I As a user of MarketMate, I am able to sign up and access alcoholic products when I am 18 years old.
+As a user of MarketMate, I can not access alcoholic products if younger than 18.
 
 | Step# | Action                               | Expected outcome                                           | OK/NOK | URL                                                | Link to issue               |
 |-------|--------------------------------------|------------------------------------------------------------|--------|----------------------------------------------------|-----------------------------|
@@ -239,5 +242,63 @@ As a user of MarketMate, I As a user of MarketMate, I am able to sign up and acc
 | 5     | Fill in Username and Password        | Username and Passord are accepted                          | OK     |                                                    |                             |
 | 6     | Click on Sign up                     | Login successfull                                          | OK     |                                                    |                |
 | 7     | Click on Shop                        | Age verification form is displayed                         | OK     |                                                    |                |
-| 8     | Enter date of birth = today minus 18 years (format: MM-DD-YYYY) | DOB is accepted                 | OK     |                                                    |                |
-| 9     | Click on Confirm                     | User is granted access to shop including alcohol           | NOK     |                                                    |                |
+| 8     | Enter date of birth = today minus 18 years + 1 day (format: MM-DD-YYYY) | DOB is accepted         | OK     |                                                    |                |
+| 9     | Click on Confirm                     | User sees message: "You are underage. You can still browse the site, but you will not be able to view alcohol products."  | Ok     |                                                    |                |
+| 10    | Attempt to browse alcoholic products section | Access is denied, alcoholic products are not visible | OK     |                                                    |                |
+
+<img width="1470" height="956" alt="Screenshot 2025-09-01 at 16 04 28" src="https://github.com/user-attachments/assets/913fef92-fd07-4f2d-ae08-f343432c6819" />
+
+<img width="1338" height="787" alt="Screenshot 2025-09-01 at 16 06 25" src="https://github.com/user-attachments/assets/36150e8a-da29-4b93-b4a0-eb24174002d8" />
+
+### Scenario 13: Verify users under 18 can browse non-alcoholic products
+
+Precondition: User has registered, is under 18 (e.g., 17 years old), and has not yet accessed the shop.
+
+As a user of MarketMate, I can not access alcoholic products if younger than 18 but I can still browse all the other categories.
+
+| Step# | Action                               | Expected outcome                                           | OK/NOK | URL                                                | Link to issue               |
+|-------|--------------------------------------|------------------------------------------------------------|--------|----------------------------------------------------|-----------------------------|
+| 1     | Go too sign-up page                  | Sign-up page is displayed                                  | OK     | [https://grocerymate.masterschool.com/auth](https://grocerymate.masterschool.com/auth)     |                             |
+| 2     | Click on "Create a new account"      | Account creation form is displayed                         | OK     |                                                    |                             |
+| 3a    | Fill in RandomUsername               | UserName is accepted                                       | OK     |                                                    |                             |
+| 3b    | Fill in RandomEmailAdress            | RandomEmailAdress is accepted                              | OK     |                                                    |                             |
+| 3c    | Choose RandomPassword                | RandomPassword                                             | OK     |                                                    |                             |
+| 4     | Click on Sign Up                     | User is redirected to the login page                       | OK     |                                                    |                             |
+| 5     | Fill in Username and Password        | Username and Passord are accepted                          | OK     |                                                    |                             |
+| 6     | Click on Sign up                     | Login successfull                                          | OK     |                                                    |                |
+| 7     | Click on Shop                        | Age verification form is displayed                         | OK     |                                                    |                |
+| 8     | Enter date of birth = today minus 18 years + 1 day (format: MM-DD-YYYY) | DOB is accepted         | OK     |                                                    |                |
+| 9     | Click on Confirm                     | User sees message: "You are underage. You can still browse the site, but you will not be able to view alcohol products."          | NOK     |                                                    |                |
+| 10    | Search for non-alcoholic product (e.g., "bread") | Product is visible                            | OK     |                                                    |                |
+
+<img width="1150" height="667" alt="Screenshot 2025-09-01 at 16 21 49" src="https://github.com/user-attachments/assets/c6576f0c-28f6-4a56-81e4-5f72f3ed696f" />
+
+
+
+### Scenario 14: Verify users under 18 can browse non-alcoholic products
+
+Precondition: User has registered, is under 18 (e.g., 17 years old), and has not yet accessed the shop.
+
+As a user of MarketMate, I can not access alcoholic products if younger than 18 but I can still browse all the other categories.
+
+| Step# | Action                               | Expected outcome                                           | OK/NOK | URL                                                | Link to issue               |
+|-------|--------------------------------------|------------------------------------------------------------|--------|----------------------------------------------------|-----------------------------|
+| 1     | Go too sign-up page                  | Sign-up page is displayed                                  | OK     | [https://grocerymate.masterschool.com/auth](https://grocerymate.masterschool.com/auth)     |                             |
+| 2     | Click on "Create a new account"      | Account creation form is displayed                         | OK     |                                                    |                             |
+| 3a    | Fill in RandomUsername               | UserName is accepted                                       | OK     |                                                    |                             |
+| 3b    | Fill in RandomEmailAdress            | RandomEmailAdress is accepted                              | OK     |                                                    |                             |
+| 3c    | Choose RandomPassword                | RandomPassword                                             | OK     |                                                    |                             |
+| 4     | Click on Sign Up                     | User is redirected to the login page                       | OK     |                                                    |                             |
+| 5     | Fill in Username and Password        | Username and Passord are accepted                          | OK     |                                                    |                             |
+| 6     | Click on Sign up                     | Login successfull                                          | OK     |                                                    |                |
+| 7     | Click on Shop                        | Age verification form is displayed                         | OK     |                                                    |                |
+| 8     | Enter date of birth = today minus 25 years (format: MM-DD-YYYY) | DOB is accepted                 | OK     |                                                    |                |
+| 9     | Click on Confirm                     | User is granted full access to the shop                    | OK     |                                                    |                |
+| 10    | Browse alcoholic products section    | Alcoholic products are visible                             | OK     |                                                    |                |
+| 11    | Browse non-alcoholic products section (e.g., "bread")   | Non-alcoholic products are visible      | OK     |                                                    |                |
+
+<img width="1327" height="770" alt="Screenshot 2025-09-01 at 16 25 35" src="https://github.com/user-attachments/assets/ddbf2884-428e-4840-824a-a92e0b7b0961" />
+<img width="1343" height="725" alt="Screenshot 2025-09-01 at 16 29 31" src="https://github.com/user-attachments/assets/06271d98-8d11-4631-92a7-12cfbd8f9d22" />
+<img width="1335" height="790" alt="Screenshot 2025-09-01 at 16 29 42" src="https://github.com/user-attachments/assets/c9a1f199-81ee-4b47-8050-f312ff2d70eb" />
+
+
