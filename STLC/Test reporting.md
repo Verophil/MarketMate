@@ -374,7 +374,7 @@ Precondition: User is logged in and has an empty basket.
 | Step# | Action                               | Expected outcome                                           | OK/NOK | URL                                                | Link to issue               |
 |-------|--------------------------------------|------------------------------------------------------------|--------|----------------------------------------------------|-----------------------------|
 | 1     | Add items to basket until total = 20€| Basket total shows exactly 20€                             | OK     | [https://grocerymate.masterschool.com/store](https://grocerymate.masterschool.com/store)|             |
-| 2     | Review shipping costs                | Free shipping is applied                                   | OK     |                                                    |[https://github.com/Verophil/MarketMate/issues/7](https://github.com/Verophil/MarketMate/issues/7)|
+| 2     | Review shipping costs                | Free shipping is applied                                   | OK     |                                                    |                             |
 
 <img width="1274" height="698" alt="Screenshot 2025-09-01 at 18 50 56" src="https://github.com/user-attachments/assets/3b7915e2-8ece-4571-919c-864c5aef1f66" />
 
