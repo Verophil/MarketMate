@@ -4,7 +4,7 @@ Precondition: User is logged in and has purchased the product "Sample Product".
 
 As a user of MarketMate, I am able to submit a a minimum rating (1 star).
 
-| Step# | Action                         | Expected outcome  | OK/NOK | URL                      | Link to issue |
+| Step# | Action                                    | Expected outcome  | OK/NOK | URL                      | Link to issue |
 |-------|--------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
 | 1     | Go to product detail page of sample product | Product detail page is displayed | OK     | [https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb47991](https://grocerymate.masterschool.com/product/66b3a57b3fd5048eacb47991) |               |
 | 2     | Scroll down to rating section  | Rating widget is visible | OK     |                  |               |
