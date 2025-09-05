@@ -30,23 +30,31 @@
     - **Expected Outcome**: Error message "You can only rate purchased products."
 
 6. **Equivalence Partitioning**
-  - **Test Case**: Verify rating with and without feedback.
-    - **Input**:
-      - Case 1: Rating = 4 stars, Feedback = empty.
-      - Case 2: Rating = 4 stars, Feedback = "Great product".
-    - **Expected Outcome**: Both cases accepted.
+  - **Test Case**: Verify rating without feedback.
+    - **Input**: Rating = 4 stars, Feedback = empty.
+    - **Expected Outcome**: Rating and feedback saved successfully and displayed immediately.
 
-7. **State Transition Testing**
-  - **Test Case**: Verify user can edit rating after submission.
+7. **Equivalence Partitioning**
+  - **Test Case**: Verify rating with feedback.
+    - **Input**: Case 2: Rating = 4 stars, Feedback = "Great product".
+    - **Expected Outcome**: Rating and feedback saved successfully and displayed immediately.
+
+8. **State Transition Testing**
+  - **Test Case**: Verify user can edit rating up after submission.
     - **Input**: Submit 2 stars → Edit to 4 stars.
     - **Expected Outcome**: Updated rating displayed immediately.
 
-8. **Error Guessing**
+9. **State Transition Testing**
+  - **Test Case**: Verify user can edit rating down after submission.
+    - **Input**: Submit 4 stars → Edit to 2 stars.
+    - **Expected Outcome**: Updated rating displayed immediately.
+
+10. **Error Guessing**
   - **Test Case**: Verify behavior when feedback contains only spaces.
     - **Input**: Rating = 3 stars, Feedback = "   ".
-    - **Expected Outcome**: Treated as empty → Rating saved without feedback.Error Guessing
+    - **Expected Outcome**: Treated as empty → Rating saved without feedback.
 
-9. **Error Guessing**
+11. **Error Guessing**
   - **Test Case**: Verify system behavior when user attempts to submit 0 stars with feedback.
     - **Input**: Rating = 0 stars, Feedback = "Bad product".
     - **Expected Outcome**: Error message "Minimum rating is 1 star."
