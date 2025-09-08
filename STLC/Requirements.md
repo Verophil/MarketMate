@@ -60,7 +60,7 @@ Users should be able to rate products with a 5-star system and have the option t
 
 **Detailed Requirement:**
 
-- Age verification is required once when creating an account for the first time by entering the date of birth in the format MM-DD-YYYY.
+- Age verification is required every time when clicking on "shop" after login by entering the date of birth in the format MM-DD-YYYY.
 - Self-disclosure of age is sufficient (no document upload required).
 - Customers under 18 may browse the site but cannot view alcoholic products. They are shown an appropriate message instead.
 - There are no products such as cakes or chocolates containing alcohol. 
