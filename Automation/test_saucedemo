@@ -15,7 +15,13 @@ def test_saucedemo_login_and_product():
     password_input.send_keys("secret_sauce")
     login_button.click()
 
-    # --- Überprüfen ob Login erfolgreich ---
-    # Check: wir landen auf der Seite mit Produkten (h1 oder div mit Titel "Products")
+    # --- Verify succefull login ---
+    # Check: we land on the page with products (h1 or div with title "Products")
     products_title = driver.find_element(By.CLASS_NAME, "title")
     assert products_title.text == "Products"
+
+    # --- Check whether product is available ---
+    product_name = driver.find_element(By.CLASS_NAME, "inventory_item_name")
+    assert product_name.text == "Sauce Labs Backpack"
+
+    driver.quit()
