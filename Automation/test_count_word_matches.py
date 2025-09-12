@@ -1,9 +1,8 @@
 import pytest
 from count_word_matches import count_word_matches
 
-# -----------------
 # Exercise 1: Basic Parameterized Tests
-# -----------------
+
 @pytest.mark.parametrize("text, target, expected", [
     ("The cat sat on the mat", "cat", 1),
     ("Dog dog DOG dOg", "dog", 4),
@@ -17,9 +16,9 @@ def test_basic(text, target, expected):
     assert count_word_matches(text, target) == expected
 
 
-# -----------------
+
 # Exercise 2: Edge Case Testing
-# -----------------
+
 @pytest.mark.parametrize("text, target, expected", [
     ("", "word", 0),                # Empty text
     ("hello world", "", 0),         # Empty target
@@ -33,9 +32,9 @@ def test_edge_cases(text, target, expected):
     assert count_word_matches(text, target) == expected
 
 
-# -----------------
+
 # Exercise 3: Negative Testing
-# -----------------
+
 @pytest.mark.parametrize("text, target", [
     (None, "word"),
     ("hello world", None),
