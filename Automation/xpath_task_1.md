@@ -1,6 +1,6 @@
 # XPath Homework – Task 1
 
-## 1. Locate the main <h1> element
+## 1. Locate the main header element
 **XPath:** `//h1[@id='mainTitle']`  
 **Text on the page:** Welcome to Our Company
 
@@ -36,7 +36,7 @@
 **XPath:** `//footer/p`  
 **Text:** © 2023 Company Name. All rights reserved.
 
-## 10. Select the first team member's <h4> name
+## 10. Select the first team member's name
 **XPath:** `(//div[@class='team']//h4)[1]`  
 **Text:** John Doe
 
@@ -44,7 +44,7 @@
 **XPath:** `(//div[@class='service-item']/p)[2]`  
 **Text:** Designing visual content.
 
-## 12. Select the "Contact Us" section header (<h2>)
+## 12. Select the "Contact Us" section header
 **XPath:** `//section[@id='contact']//h2[text()='Contact Us']`  
 **Text:** Contact Us
 
@@ -52,7 +52,7 @@
 **XPath:** `//li[a[text()='Services']]//ul[@class='dropdown']//a`  
 **Text:** Web Development, Graphic Design, SEO Services
 
-## 14. Select the first <li> under the "Our Team" section
+## 14. Select the first li under the "Our Team" section
 **XPath:** `(//div[@class='team']//li)[1]`  
 **Text:** John Doe
 
