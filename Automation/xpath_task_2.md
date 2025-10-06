@@ -1,7 +1,7 @@
 # XPath Homework – Task 2
 
 ## Subtask 1
-1. Xpath to first icon: (//svg[@class="headerIcon-size"])[1]
+**1. Xpath to first icon:** `(//svg[@class="headerIcon-size"])[1]´
 
 ## Subtask 2
 1. Xpath to input field "Email adress": //input[@placeholder="Email address"]
