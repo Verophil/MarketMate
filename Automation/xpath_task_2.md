@@ -3,7 +3,7 @@
 1. Xpath to first icon: (//svg[@class="headerIcon-size"])[1]
    
 2. Xpath to input field "Email adress": //input[@placeholder="Email address"]
-   Xpath to input field "Password": //input[@placeholder="Password"]
+Xpath to input field "Password": //input[@placeholder="Password"]
    Xpath to "Sign in" button: //button[text()="Sign In"]
    Xpath to "Create a new accpount" link: //a[@class="switch-link"]
    Xpath to "Go to home" link: //a[@class="home-link"]
