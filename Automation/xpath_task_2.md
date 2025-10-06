@@ -1,9 +1,9 @@
 # XPath Homework – Task 2
 
-## Subtask 1
+## Tas 2.1
 **1. Xpath to first icon:** `(//svg[@class="headerIcon-size"])[1]`
 
-## Subtask 2
+## Task 2.2
 **1. Xpath to input field "Email adress":** `//input[@placeholder="Email address"]`
 
 **2. Xpath to input field "Password":** `//input[@placeholder="Password"]`
@@ -14,7 +14,7 @@
 
 **5. Xpath to "Go to home" link:** `//a[@class="home-link"]`
 
-## Subtask 3
+## Task 2.3
 **1. Xpath to input field "Full Name":** `//input[@placeholder="Full Name"]`
 
 **2. Xpath to input field "Email address":** `//input[@placeholder="Email address"]`
