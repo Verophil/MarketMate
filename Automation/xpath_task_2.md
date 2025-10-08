@@ -21,4 +21,14 @@
 
 **3. Xpath to input filed "Passord":** `//input[@placeholder="Password"]`
 
-**4. Xpath to "Sign up" button:**
+**4. Xpath to "Sign up" button:** `//button[@class="submit-btn"]`
+
+## Task 2.4
+**1. Xpath to "Confirm" button:** `//button[text()="Confirm"]´
+
+## Task 2.5
+**1. Xpath to "Quantity input":** `//img[@alt='Oranges']/ancestor::div[@class='card']//input[@class='quantity']`
+
+**2. Xpath to "Add to cart button for Oranges":** `//img[@alt='Oranges']/ancestor::div[contains(@class,'card')]//button[contains(., 'Add to Cart')]`
+
+**3. 
