@@ -24,7 +24,7 @@
 **4. Xpath to "Sign up" button:** `//button[@class="submit-btn"]`
 
 ## Task 2.4
-**1. Xpath to "Confirm" button:** `//button[text()="Confirm"]´
+**1. Xpath to "Confirm" button:** `//button[text()="Confirm"]`
 
 ## Task 2.5
 **1. Xpath to "Quantity input":** `//img[@alt='Oranges']/ancestor::div[@class='card']//input[@class='quantity']`
