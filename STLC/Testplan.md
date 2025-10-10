@@ -1,4 +1,4 @@
-# **Test Plan for Wbshop Enhancements**
+# **Test Plan for Webshop Enhancements**
 
 ## **1. Analyse the Product**
    
