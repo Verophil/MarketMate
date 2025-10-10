@@ -31,4 +31,5 @@
 
 **2. Xpath to "Add to cart button for Oranges":** `//img[@alt='Oranges']/ancestor::div[contains(@class,'card')]//button[contains(., 'Add to Cart')]`
 
-**3. 
+**3. Xpath to "Add to wish list button for Oranges":** `(//img[@alt='Oranges']/ancestor::div[contains(@class,'card')]//button)[2]`
+
